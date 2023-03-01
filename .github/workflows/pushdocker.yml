@@ -9,13 +9,13 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
-      - name: Push plex-audio-subtitle-switcher to Docker Hub
+      - name: Push to Docker Hub
         uses: docker/build-push-action@v1
         with:
 #          username: ${{ github.actor }}
 #          password: ${{ secrets.PAT }}
 #          registry: ghcr.io
-          dockerfile: dockerfile
+#          dockerfile: dockerfile
           username: sandronidi
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: sandronidi/flaresolverr
