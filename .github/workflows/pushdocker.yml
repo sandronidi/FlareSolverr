@@ -15,7 +15,7 @@ jobs:
 #          username: ${{ github.actor }}
 #          password: ${{ secrets.PAT }}
 #          registry: ghcr.io
-#          dockerfile: dockerfile
+#          dockerfile: Dockerfile
           username: sandronidi
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: sandronidi/flaresolverr
